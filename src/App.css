@@ -1,0 +1,94 @@
+*{
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+h1{
+    margin: 10px;
+    color: goldenrod;
+    border: 1px solid transparent ;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: inset 0px 0px 50px rgb(85, 82, 65);
+    margin-bottom:20px;
+}
+.App{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.todo-container{
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    box-shadow: 0px 0px 50px rgb(85,82,65 ) ;
+}
+
+.input-section{
+    background-color: rgb(4, 3, 3);
+    display: flex;
+    justify-content: center;
+    margin:20px;
+    margin-bottom: 40px;
+    padding: 10px;
+    box-shadow: inset 0px 0px 5px goldenrod ;
+}
+input{
+    padding: 10px;
+    margin-right: 5px;
+    width: 70%;
+    border:1px solid #ddd;
+    border-radius: 5px;
+    font-size:20px;
+}
+button{
+    padding:10px;
+    background-color: #ddd;
+    color: #aaa;
+    border: none;
+    border-radius: 5px;
+    cursor: not-allowed;
+}
+button:disabled{
+    background-color: #ddd;
+    color: #aaa;
+    cursor: not-allowed;
+}
+button.active{
+background-color:#007bff;
+    color: white;
+    cursor: pointer;
+}
+button.active:hover{
+    background-color: #0056b3;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+li{
+    color: gold;
+    padding: 10px;
+    margin: 10px;
+    border-radius:5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+li li{
+    color: black;
+  background-color: white;
+  width: 30px;
+  height: 30px;
+}
+
